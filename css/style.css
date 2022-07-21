@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrap {
+  width: 550px;
+  height: 630px;
+  padding: 30px 50px;
+  position: absolute;
+  left: 30%;
+  box-shadow: 0 6px 17px 0 rgb(0 0 0 / 10%);
+}
+/* LINE 타이틀 */
+.logo {
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.logo > img {
+  width: 89px;
+  height: 32px;
+}
+
+/* input태그 --> 이메일, 비밀번호 입력 */
+form {
+  padding: 10px 25px;
+}
+
+input {
+  width: 100%;
+  height: 40px;
+  font-size: 16px;
+  border: none;
+  border-bottom: 2px solid #dee5ec;
+  margin: 5px 0 20px 0;
+  outline: none;
+}
+
+/* 이메일, 비밀번호 글자 */
+#emailTitle,
+#pwTitle {
+  font-size: 12px;
+  color: #dee5ec;
+}
+
+/* 로그인 버튼 */
+#loginBtn {
+  width: 100%;
+  height: 65px;
+  color: white;
+  font-size: 20px;
+  font-weight: 900;
+  background-color: #dee5ec;
+  border: none;
+  border-radius: 10px;
+  margin: 15px 0;
+  cursor: no-drop;
+}
+
+/* 유효성 검사 msg */
+#wrong,
+#missing,
+#short {
+  display: none;
+  font-size: 12px;
+  color: #eb5a46;
+  text-align: center;
+}
+
+/* 로그인할 수 없는 경우 아래 옵션을 선택해주세요. */
+.cantLogin {
+  text-align: center;
+  color: #bec8d2;
+}
+
+/* New QR 코드 로그인 */
+.newQR {
+  width: 100%;
+  height: 60px;
+  margin: 40px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #dee5ec;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.New,
+.QR {
+  text-decoration: none;
+}
+.New {
+  color: #eb5a46;
+}
+.QR {
+  color: black;
+  font-weight: 550;
+}
+
+/* 이메일 또는 비밀번호를 잊어버리셨나요? */
+.forget {
+  text-align: center;
+}
+
+.forget > a {
+  font-size: 13px;
+  color: #469fd6;
+  text-decoration: none;
+}

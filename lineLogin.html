@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="logo"><img src="./img/다운로드.png" alt="LINE" /></div>
+
+      <form name="login" action="" method="post">
+        <p id="emailTitle">이메일</p>
+        <input name="email" type="email" id="emailInput" placeholder="이메일" />
+
+        <p id="pwTitle">비밀번호</p>
+        <input name="pw" type="password" id="pwInput" placeholder="비밀번호" />
+
+        <div>
+          <button type="submit" id="loginBtn" disabled>로그인</button>
+        </div>
+
+        <div id="wrong">
+          <p>이메일에 '@' 문자가 누락되어 있습니다.</p>
+        </div>
+
+        <div id="missing">
+          <p>입력하지 않은 항목이 있습니다.</p>
+        </div>
+
+        <div id="short">
+          <p>비밀번호는 6자리 이상 입력해야 합니다.</p>
+        </div>
+      </form>
+
+      <div class="cantLogin">
+        <span>로그인할 수 없는 경우 아래 옵션을 선택해주세요.</span>
+      </div>
+      <div>
+        <a class="newQR" href="#">
+          <span class="New">New</span>&nbsp
+          <span class="QR">QR 코드 로그인</span>
+        </a>
+      </div>
+
+      <div class="forget">
+        <a href="#">이메일 또는 비밀번호를 잊어버리셨나요?</a>
+      </div>
+    </div>
+    <script src="./js/login.js"></script>
+  </body>
+</html>
